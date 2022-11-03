@@ -1,0 +1,11 @@
+<h1>welcome</h1>
+
+{% for project in projects  %}
+
+    <h2 style="background-color: #990099;">{{ project.title }}</h2>
+    <p style="color: #670d0d;background-color:rgb(173, 236, 91)">{{ project.description }}</p>
+    <img src="{{project.image}}" alt="{{project.title}}">
+    <p>{{ project.image }}</p>
+
+
+{% endfor %}
