@@ -1,13 +1,18 @@
-<h1>welcome</h1>
+{% extends 'layout.html' %}
 
-{% for project in projects  %}
+{% block content %}
+    <h1>welcome</h1>
 
-    <h2 style="background-color: #990099;">{{ project.title }}</h2>
-    <p style="color: #670d0d;background-color:rgb(173, 236, 91)">{{ project.description }}</p>
-    <img src="{{project.image.url}}" alt="{{project.title}}">
-    <br>     
-    {% if project.url %}
-    <a href="{{project.url}}">{{project.url}}</a>
-    {%endif%}
-    <br> 
-{% endfor %}
+    {% for project in projects  %}
+
+        <h2 style="background-color: #990099;">{{ project.title }}</h2>
+        <p style="color: #670d0d;background-color:rgb(173, 236, 91)">{{ project.description }}</p>
+        <img src="{{project.image.url}}" alt="{{project.title}}">
+        <br>     
+        {% if project.url %}
+        <a href="{{project.url}}">{{project.url}}</a>
+        {%endif%}
+        <br> 
+    {% endfor %}
+
+{% endblock %}
