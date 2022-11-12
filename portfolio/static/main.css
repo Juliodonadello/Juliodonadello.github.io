@@ -6,7 +6,7 @@ body{
     background: #000;
 }
 
-img.mediana{
-    width: 700px;
-    height: 700px;
-  }
+.card-project:hover{
+    border: 1px solid rgb(255, 251, 251);
+    cursor: pointer;
+}
