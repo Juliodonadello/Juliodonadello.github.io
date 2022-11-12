@@ -1,3 +1,4 @@
+{% load static %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand fw-bold fst-italic" href="/">JAD</a>
@@ -9,10 +10,10 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'blog:posts' %}">Blog</a>
           </li>
-          <li class="nav-item d-flex align-item-center">
-            <a class="btn btn-primary btn-sm" href="/">Download CV</a>
+          <li class="nav-item d-flex align-items-center">
+            <a class="btn btn-primary btn-sm" href="{% static 'portfolio/cvJulioDonadello.pdf' %}" target="_blank">Download CV</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+</nav>

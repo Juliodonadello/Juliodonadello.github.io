@@ -2,8 +2,29 @@
 
 {% block content %}
     {% load static %}
-    <img src="{% static 'portfolio/webpage.jpeg' %}" alt="">
-    <h1>welcome</h1>
+    
+    <div class="container text-center bg-black my-auto">
+        <header class="row bg-black">
+            <div class="row">
+                <div class="col">
+                  <img class="mediana" src="{% static 'portfolio/webpage.jpeg' %}" alt="">
+                </div>
+
+                <div class="col">
+                  <h1>I am Julio Donadello</h1>
+                  <h3>I am a Python Machine Learning Engineer</h3>                  
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quo, consequuntur minus voluptate quod voluptas odio illo, iure porro, accusantium eaque beatae! Eveniet debitis expedita eum quidem atque neque, hic quo possimus iure, veniam, mollitia voluptatibus. Recusandae hic maxime, suscipit laboriosam, in possimus, quia aperiam animi vero quisquam pariatur ab fugit dolor doloribus. Harum animi vitae unde nihil assumenda soluta ipsam sapiente possimus optio maiores, sequi vel quaerat repellat aliquam in facilis reprehenderit quibusdam quia voluptatum enim est, incidunt similique! Totam laborum animi, minima vero odio illum alias debitis consequuntur? Provident quos tenetur temporibus! Fugiat omnis officiis sed animi libero.</p>
+                  <a href="{% static 'portfolio/cvJulioDonadello.pdf' %}" class="btn btn-primary btn-lg rounded-0 my-3">Download CV</a>                 
+                </div>
+                
+            </div>
+        </header>
+        
+      </div>
+    
+
+    
+    
 
     {% for project in projects  %}
 
