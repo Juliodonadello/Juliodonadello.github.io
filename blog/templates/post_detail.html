@@ -3,12 +3,14 @@
 {% block content %}
     <div class="text-center">
         <h1>{{ post.title }}</h1>
-        <h3 class="my-2 h5 text-muted">{{ post.date }}</h3>
+        <h3 class="my-2 h5 text-muted">{{ post.published_date }}</h3>  <!-- Cambié 'date' a 'published_date' -->
         <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
         <div class="my-4">
-            <p>{{ post.description | safe}}</p>
+            <p>{{ post.description | safe }}</p>  <!-- Muestra la descripción si la necesitas -->
+        </div>
+        <div class="my-4">
+            <!-- Renderiza el contenido en Markdown convertido a HTML -->
+            <div>{{ post.content | safe }}</div>
         </div>
     </div>
-    
-
 {% endblock %}
